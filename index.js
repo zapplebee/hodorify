@@ -13,7 +13,6 @@
     typeof define.amd === "object" &&
     define.amd
   ) {
-    // register as 'classnames', consistent with npm package name
     define("hodorify", [], function() {
       return hodorify;
     });
