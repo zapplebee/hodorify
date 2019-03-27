@@ -1,5 +1,6 @@
 (function() {
   "use strict";
+
   function hodorify(subjectString) {
     var rgx = /([a-z])\w+/gi;
     return subjectString.replace(rgx, "hodor");
