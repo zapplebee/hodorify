@@ -2,10 +2,13 @@
   "name": "hodorify",
   "version": "0.1.0",
   "description": "Hodor",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zapplebee/hodorify.git"
+  },
+  "scripts": {
+    "build": "rollup -c ./rollup.config.js"
   },
   "keywords": [
     "Hodor"
@@ -15,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/zapplebee/hodorify/issues"
   },
-  "homepage": "https://github.com/zapplebee/hodorify#readme"
+  "homepage": "https://github.com/zapplebee/hodorify#readme",
+  "dependencies": {
+    "case": "^1.6.1",
+    "rollup": "^1.7.3",
+    "rollup-plugin-commonjs": "^9.2.2",
+    "rollup-plugin-node-resolve": "^4.0.1"
+  }
 }
