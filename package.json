@@ -1,0 +1,19 @@
+{
+  "name": "hodorify",
+  "version": "0.1.0",
+  "description": "Hodor",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zapplebee/hodorify.git"
+  },
+  "keywords": [
+    "Hodor"
+  ],
+  "author": "Zachary Skalko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zapplebee/hodorify/issues"
+  },
+  "homepage": "https://github.com/zapplebee/hodorify#readme"
+}
