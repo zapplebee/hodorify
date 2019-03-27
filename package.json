@@ -15,7 +15,8 @@
     "url": "git+https://github.com/zapplebee/hodorify.git"
   },
   "scripts": {
-    "build": "rollup -c ./rollup.config.js"
+    "build": "rollup -c ./rollup.config.js",
+    "test": "jest"
   },
   "keywords": [
     "Hodor"
@@ -33,6 +34,7 @@
     "rollup": "^1.7.3",
     "rollup-plugin-commonjs": "^9.2.2",
     "rollup-plugin-node-resolve": "^4.0.1",
-    "rollup-plugin-terser": "^4.0.4"
+    "rollup-plugin-terser": "^4.0.4",
+    "jest": "^24.5.0"
   }
 }
