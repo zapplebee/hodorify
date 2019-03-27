@@ -1,10 +1,10 @@
 // rollup.config.js
 import resolve from "rollup-plugin-node-resolve";
 import commonJS from "rollup-plugin-commonjs";
-
+import { terser } from "rollup-plugin-terser";
 export default [
   {
-    input: "src/index.js",
+    input: "src/hodorify.js",
     output: {
       file: __dirname + "/dist/esm.js",
       format: "es"
@@ -12,16 +12,19 @@ export default [
     external: ["case"]
   },
   {
-    input: "src/index.js",
+    input: "src/hodorify.js",
     output: {
-      file: __dirname + "/dist/cjs.js",
-      format: "cjs"
+      file: __dirname + "/dist/hodorify.js",
+      format: "umd",
+      name: "hodorify",
+      globals: {
+        case: "Case"
+      }
     },
     external: ["case"]
   },
-
   {
-    input: "src/index.js",
+    input: "src/hodorify.js",
     output: {
       format: "iife",
       name: "hodorify",
@@ -31,7 +34,8 @@ export default [
       resolve(),
       commonJS({
         include: "node_modules/**"
-      })
+      }),
+      terser()
     ]
   }
 ];

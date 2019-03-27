@@ -2,7 +2,11 @@
   "name": "hodorify",
   "version": "0.1.0",
   "description": "Hodor",
-  "main": "src/index.js",
+  "main": "dist/hodorify.js",
+  "module": "dist/esm.js",
+  "files": [
+    "dist/*"
+  ],
   "bin": {
     "hodorify": "./dist/bin.js"
   },
