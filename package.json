@@ -1,6 +1,6 @@
 {
   "name": "hodorify",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Hodor",
   "main": "dist/hodorify.js",
   "module": "dist/esm.js",
@@ -26,7 +26,7 @@
     "url": "https://github.com/zapplebee/hodorify/issues"
   },
   "homepage": "https://github.com/zapplebee/hodorify#readme",
-  "dependencies": {
+  "peerDependencies": {
     "case": "^1.6.1"
   },
   "devDependencies": {
