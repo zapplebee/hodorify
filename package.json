@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Hodor",
   "main": "src/index.js",
+  "bin": {
+    "hodorify": "./dist/bin.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zapplebee/hodorify.git"
@@ -20,9 +23,12 @@
   },
   "homepage": "https://github.com/zapplebee/hodorify#readme",
   "dependencies": {
-    "case": "^1.6.1",
+    "case": "^1.6.1"
+  },
+  "devDependencies": {
     "rollup": "^1.7.3",
     "rollup-plugin-commonjs": "^9.2.2",
-    "rollup-plugin-node-resolve": "^4.0.1"
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-terser": "^4.0.4"
   }
 }
